@@ -2,10 +2,13 @@
  * .config/webpack.config.prod.js :
  * This file defines the production build configuration
  */
-const { helpers, externals, presets } = require( '@humanmade/webpack-helpers' );
+const { helpers, externals, loaders, presets } = require( '@humanmade/webpack-helpers' );
+const postcssNesting = require( 'postcss-nesting' );
 const { filePath } = helpers;
 
-loaders.ts.defaults.loader = 'babel-loader!ts-loader';
+// Mutate the loader defaults.
+loaders.ts.defaults.loader = 'babel-loader';
+loaders.postcss.defaults.options.postcssOptions.plugins.push( postcssNesting() );
 
 module.exports = presets.production( {
 	externals,
@@ -17,10 +20,12 @@ module.exports = presets.production( {
 	},
 	resolve: {
 		extensions: [
-			'ts',
-			'tsx',
-			'js',
-			'json',
+			'.ts',
+			'.tsx',
+			'.wasm',
+			'.mjs',
+			'.js',
+			'.json',
 		],
 	},
 } );

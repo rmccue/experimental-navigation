@@ -63,7 +63,7 @@ function enqueue_assets() {
 
 	Asset_Loader\enqueue_asset(
 		// In a plugin, this would be `plugin_dir_path( __FILE__ )` or similar.
-		get_stylesheet_directory() . '/build/asset-manifest.json',
+		plugin_dir_path( __DIR__ ) . '/build/asset-manifest.json',
 		// Enqueue CSS for the editor.
 		'app.css',
 		[
