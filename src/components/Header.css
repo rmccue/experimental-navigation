@@ -1,0 +1,45 @@
+.rm-navigation-header {
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	height: auto;
+}
+
+.rm-navigation-header .rm-navigation-header__site-icon.components-button {
+	padding: 12px;
+	height: 60px;
+	color: #fff;
+
+	&:hover,
+	&:focus,
+	&:not([aria-disabled='true']):active {
+		color: #fff;
+	}
+
+	.dashicon {
+		width: 36px;
+		height: 30px;
+
+		&::before {
+			font-size: 30px;
+		}
+	}
+
+	img {
+		height: auto;
+		width: 36px;
+	}
+}
+
+.rm-navigation-header .rm-navigation-header__site-title.components-button {
+	padding-left: 0;
+	color: var( --rm-navigation-site-title );
+	font-weight: 600;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var( --rm-navigation-site-title-hover );
+	}
+}

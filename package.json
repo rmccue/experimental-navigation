@@ -1,0 +1,21 @@
+{
+  "name": "rm-experimental-nav",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
+    "@humanmade/webpack-helpers": "^0.10.1",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3",
+    "webpack": "4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build": "webpack --config=.config/webpack.config.prod.js",
+    "start": "webpack serve --config=.config/webpack.config.dev.js"
+  }
+}

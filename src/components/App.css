@@ -1,0 +1,33 @@
+:root {
+	--rm-navigation-background: #23282d;
+	--rm-navigation-selected: #0073aa;
+	--rm-navigation-separator: #2c3338;
+	--rm-navigation-site-title: #ccc;
+	--rm-navigation-site-title-hover: #e0e0e0;
+	--rm-navigation-item: #a2aabe;
+	--rm-navigation-item-hover: #fff;
+	--rm-navigation-width: 240px;
+	--rm-navigation-header-height: 60px;
+	--rm-navigation-admin-bar-height: 0;
+}
+
+.admin-color-altis {
+	--rm-navigation-background: #152a4e;
+	--rm-navigation-selected: #4667de;
+}
+
+body.admin-bar {
+	--rm-navigation-admin-bar-height: 32px;
+}
+
+@media screen and (max-width: 782px) {
+	body.admin-bar {
+		--rm-navigation-admin-bar-height: 46px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body.admin-bar {
+		--rm-navigation-admin-bar-height: 0;
+	}
+}
