@@ -1,0 +1,8 @@
+{
+	"name": "rmccue/experimental-navigation",
+	"description": "Try a new form of navigation in your WordPress dashboard.",
+	"type": "wordpress-plugin",
+	"require": {
+		"humanmade/asset-loader": "^0.5.0"
+	}
+}

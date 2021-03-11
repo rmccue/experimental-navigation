@@ -9,6 +9,7 @@ Try tomorrow's admin navigation, today!
 Clone this repository, then:
 
 ```sh
+composer install
 yarn install
 yarn run build
 ```
